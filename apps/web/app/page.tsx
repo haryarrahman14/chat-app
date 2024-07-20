@@ -1,3 +1,4 @@
+import { Button } from 'rizzui';
 import { getHello } from '../repository/hello';
 
 const RootPage = async ({ params }: { params: { forTest?: boolean } }) => {
@@ -8,7 +9,7 @@ const RootPage = async ({ params }: { params: { forTest?: boolean } }) => {
     console.error(error);
   }
 
-  return <p className="text-gray-500">TEST</p>;
+  return <Button>TEST</Button>;
 };
 
 export default RootPage;
